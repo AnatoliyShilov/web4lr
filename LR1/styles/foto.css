@@ -1,0 +1,17 @@
+.viewFoto
+{
+	border-color: #6D7FFD;
+	border-width: 5px;
+	border-style: inset;
+	position: absolute;
+	max-width: 90%;
+	background: #CFD4F7;
+	margin-left: 10%;
+	z-index: 1;
+	max-height: 800px;
+}
+
+#view
+{
+	align-items: center;
+}
