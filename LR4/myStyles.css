@@ -180,3 +180,8 @@ li.blur
 {
 	color: #F00;
 }
+
+.popover
+{
+	position: absolute;
+}
