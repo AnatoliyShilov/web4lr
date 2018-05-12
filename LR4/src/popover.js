@@ -23,5 +23,3 @@ class Popover
         setTimeout('$("' + this.name + '").show()', ms);
     }
 }
-
-

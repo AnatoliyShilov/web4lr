@@ -103,11 +103,14 @@ function nextImg()
 	if (currentImgIndex > maxImgIndex)
 		currentImgIndex = 0;
 	$('#lineGalery')
-		.animate({left: '+=200px'}, 500)
-		.hide(100, showImgOnIndex(currentImgIndex))
-		.animate({left: '-=400px'}, 0)
+		.animate({left: '-=200px'}, 500)
+		.hide(100, function()
+		{
+			showImgOnIndex(currentImgIndex);
+		})
+		.animate({left: '+=400px'}, 0)
 		.show(100)
-		.animate({left: '+=200px'}, 500);
+		.animate({left: '-=200px'}, 500);
 }
 
 function prevImg()
@@ -116,11 +119,14 @@ function prevImg()
 	if (currentImgIndex < 0)
 		currentImgIndex = maxImgIndex;
 	$('#lineGalery')
-		.animate({left: '-=200px'}, 500)
-		.hide(100, showImgOnIndex(currentImgIndex))
-		.animate({left: '+=400px'}, 0)
+		.animate({left: '+=200px'}, 500)
+		.hide(100, function()
+		{
+			showImgOnIndex(currentImgIndex);
+		})
+		.animate({left: '-=400px'}, 0)
 		.show(100)
-		.animate({left: '-=200px'}, 500);
+		.animate({left: '+=200px'}, 500);
 }
 
 function tableGalery()
