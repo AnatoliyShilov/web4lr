@@ -12,8 +12,8 @@ window.onload = function()
     document.testForm.q2.onmouseover = function (){ q2.showPopover(10); };
     document.testForm.q2.onmouseout = function (){ q2.hidePopover(10); };
     var q3 = new Popover('q3Pop', 'q3', 'textarea[name="q3"]');
-    document.testForm.q3.onmouseover = function (){ q3.showPopover(10); };
-    document.testForm.q3.onmouseout = function (){ q3.hidePopover(10); };
+    document.testForm.q3.onmouseover = function (){ q3.showPopover(1000); };
+    document.testForm.q3.onmouseout = function (){ q3.hidePopover(1000); };
 }
 
 function validateForm( )

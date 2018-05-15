@@ -1,12 +1,12 @@
 var images, imagesMin, description;
 var currentImgIndex, maxImgIndex;
 main();
-window.onload = function()
+$(document).ready(function()
 {
 	createMenu();
 	startTime();
 	$('#galery').html(tableGalery());
-};
+});
 
 function showImg(index)
 {
