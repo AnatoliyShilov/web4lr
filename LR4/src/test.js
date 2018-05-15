@@ -1,4 +1,4 @@
-window.onload = function()
+$(document).ready(function()
 {
     createMenu();
     startTime();
@@ -14,7 +14,15 @@ window.onload = function()
     var q3 = new Popover('q3Pop', 'q3', 'textarea[name="q3"]');
     document.testForm.q3.onmouseover = function (){ q3.showPopover(1000); };
     document.testForm.q3.onmouseout = function (){ q3.hidePopover(1000); };
-}
+    dataModule.elem = "button[type=reset]";
+    dataModule.event = "click";
+    dataModule.todo = function () 
+    {
+        document.testForm.q2.value = '';
+        document.testForm.q3.value = '';
+    };
+    addDialogue();
+});
 
 function validateForm( )
 {
