@@ -1,0 +1,51 @@
+.modalWindow
+{
+    width: 400px;
+    font: 12pt fantasy;
+	height: 200px;
+	border: 5px #6D7FFD inset;
+	background: #CFD4F7;
+	position: fixed;
+	top: 40%;
+	left: 50%;
+	margin-top: -100px;
+	margin-left: -200px;
+	z-index: 20;
+	padding: 20px 20px;
+	filter: none;
+}
+.overlay
+{
+	z-index:19;
+	position:fixed;
+	background-color: rgba(234, 202, 183, 0.2);
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+}
+.blurAll
+{
+	filter: blur(3px);
+}
+.modalWindowButton
+{
+    z-index: 21;
+    font: 12pt fantasy;
+	background-color: rgb(108, 127, 255);
+	border: none;
+	width: 5em;
+	height: 2.5em;
+	display: inline-block;
+	margin-top: 5em;
+	margin-right: 3.5em;
+	margin-left: 3.5em;
+	font-size: 1em;
+}
+.modalWindowMessage
+{
+	z-index: 21;
+	font-size: 2em;
+	width: 100%;
+	text-align: center;
+}
