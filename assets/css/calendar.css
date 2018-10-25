@@ -1,0 +1,38 @@
+td.today 
+{
+  outline: 3px solid red;
+}
+
+.today
+{
+  border-color: #F00 !important;
+}
+
+.empty
+{
+  min-width: 35px;
+  display: inline-block;
+}
+
+.selected
+{
+  border-color: #0F0 !important;
+}
+
+.unavailable
+{
+  border-color: #888 !important;
+}
+
+#tCalendar
+{
+	min-width: 250px;
+	max-width: 250px;
+}
+.cell
+{
+  max-width: 10%;
+  min-width: 10%;
+  border-width: 5px; 
+  display: inline-block;
+}
