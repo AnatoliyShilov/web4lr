@@ -1,0 +1,22 @@
+RewriteEngine On
+RewriteRule ^$ user/main/
+RewriteRule ^user/([A-Za-z0-9-]+)/(user/)$ //$2
+RewriteRule ^user/blog/(page=([0-9]+))$ index.php?blog=0&pageNum=$2
+RewriteRule ^user/guestBook/(page=([0-9]+))$ index.php?guestBook=0&pageNum=$2
+RewriteRule ^user/([A-Za-z0-9-]+)/?$ index.php?route=$1
+RewriteRule ^user/(([A-Za-z0-9-]+)/)+(assets/(.+))$ $3 
+RewriteRule ^user/([A-Za-z0-9]+)/#([A-Za-z0-9]+)$ user/([A-Za-z0-9]+)#(A-Za-z0-9]+)
+RewriteRule ^user/(assets/(.+))$ $1
+
+php_value error_reporting -1
+php_flag display_errors on
+php_flag display_startup_errors on
+
+php_flag ignore_repeated_source off
+php_flag ignore_repeated_errors off
+
+php_flag track_errors on
+
+php_flag log_errors on
+
+php_flag mysql.trace_mode on
